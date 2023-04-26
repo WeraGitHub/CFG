@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;800&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.content-card {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 15px;
+    text-align: center;
+    padding: 3rem;
+    min-width: 20rem;
+    max-width: 75%;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.ticket {
+    color: hsl(216, 4%, 48%);
+    font-weight: 100;
+}
+
+.invite {
+    color: hsl(191, 9%, 64%);
+    margin-bottom: 0;
+}
+
+.dates {
+    font-style: italic;
+    color: hsl(191, 9%, 64%);
+    margin: 0;
+}
+
+.headline {
+    margin-top: 0;
+}
+
+h3 {
+    color: #47f5a7;
+    /* margin-top: 0; */
+    font-weight: 100;
+}
+
+.btn p {
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+}
+
+
+#adviceText {
+    font-size: 28px;
+}
+
+.btn {
+    cursor: pointer;
+    text-align: center;
+    background-color: hsl(150, 100%, 66%);
+    padding: 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    width: 7rem;
+    height: 1.5rem;
+    transition: 0.5s;
+    margin: auto 10px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 20px hsl(150, 100%, 66%), 0 0 30px hsl(150, 100%, 66%);
+}
+
+.btn img {
+    width: 100% !important;
+}
+
+#userMsg {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    color: #fff;
+    font-style: italic;
+}
+
+.attribution {
+    margin-top: 5rem;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+
+.attribution a {
+    color: #47f5a7;
+}
