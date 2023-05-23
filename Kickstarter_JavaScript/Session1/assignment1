@@ -1,1 +1,14 @@
-// here! maybe a guessing name?
+// greeting for the user
+const greeting = 'Hello';
+console.log(greeting);
+// explain rules
+const rules = "If you give us your number we will return it being multiplied by a random number. Magic."
+console.log(rules);
+// generate random number
+const random = Math.random();
+// ask for number using prompt
+const number = prompt("What's your number?");
+console.log(`You have chosen number: ${number}`);
+// make magic happen
+const magicoutcome = number * random;
+console.log(`Taadaaa: 🔥 🔥 🔥  ${magicoutcome} 🔥 🔥 🔥`);
