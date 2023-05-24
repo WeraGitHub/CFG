@@ -1,14 +1,49 @@
-// greeting for the user
-const greeting = 'Hello';
-console.log(greeting);
-// explain rules
-const rules = "If you give us your number we will return it being multiplied by a random number. Magic."
-console.log(rules);
-// generate random number
-const random = Math.random();
+// Version 2
+
+// greetings and rules
+const rules = "Hello! \n\nWould you like to play a fun game? \n\nIf you give us your number we will return it multiplied by a random number. \n\nMagic.";
+alert(rules);
+
+// Generate a random integer between -20 and 1000
+const min = -20;
+const max = 1000;
+const random = Math.floor(Math.random() * (max - min + 1)) + min;
+
 // ask for number using prompt
-const number = prompt("What's your number?");
+const number = prompt(`The random number is ${random}. \nWhat's your number? `);
 console.log(`You have chosen number: ${number}`);
+
 // make magic happen
-const magicoutcome = number * random;
-console.log(`Taadaaa: 🔥 🔥 🔥  ${magicoutcome} 🔥 🔥 🔥`);
+const magicOutcome = number * random;
+alert(`Taadaaa: 🔥 🔥 🔥  ${magicOutcome} 🔥 🔥 🔥`);
+
+
+
+
+// Version 1
+
+// // greeting for the user
+// const greeting = 'Hello';
+// console.log(greeting);
+
+// // explain rules
+// const rules = "If you give us your number we will return it multiplied by a random number. Magic.";
+// console.log(rules);
+
+// // Function to handle the prompt and perform the magic
+// function performMagic() {
+//   // generate random number
+//   const random = Math.random();
+
+//   // ask for number using prompt
+//   const number = prompt(`The random number is ${random}. What's your number? `);
+//   console.log(`You have chosen number: ${number}`);
+
+//   // make magic happen
+//   const magicOutcome = number * random;
+//   console.log(`Taadaaa: 🔥 🔥 🔥  ${magicOutcome} 🔥 🔥 🔥`);
+// }
+
+// // Event listener to trigger the prompt after a delay
+// setTimeout(performMagic, 3000); // Adjust the delay time (in milliseconds) as needed
+
