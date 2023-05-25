@@ -8,6 +8,7 @@ const emoji = '💕';
 
 // concatonation
 console.log(greeting + " " + my_name + " " + emoji);
+
 //interpolation
 const message = `${emoji} ${greeting} ${emoji}`;
 console.log(message);
