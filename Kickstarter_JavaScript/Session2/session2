@@ -1,0 +1,12 @@
+//Slide 10 = student exercise
+let price = 100;
+const discount = 20;
+
+console.log("Price: " + price);
+
+// apply the dicsount
+price = price * ((100 - discount) / 100);
+
+// printing the new price
+
+console.log("New Price: " + price);
