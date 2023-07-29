@@ -1,0 +1,46 @@
+// Version 2
+
+// greetings and rules
+const rules =
+  "Hello! \n\nWould you like to play a fun game? \n\nIf you give us your number we will return it multiplied by a random number. \n\nMagic.";
+alert(rules);
+
+// Generate a random integer between -20 and 1000
+function generateRandom(){
+	const min = -20;
+	const max = 1000;
+	let random = Math.floor(Math.random() * (max - min + 1)) + min;
+	return random;
+};
+
+randomNumb = generateRandom();
+
+// ask for number using prompt
+const number = parseInt(prompt(`The random number is ${randomNumb}. \nWhat's your number? `));
+console.log(`Your number: ${number}`);
+let number_description;
+
+if (number === 5 || number === -5){
+	randomNumb = 5;
+	console.log("Haa, your number is 5! And that was enough reason for me to change the random number to be the same 😈");
+	if ( number >= 0){
+		number_description = "It's a positive five.";
+	} else if ( number < 0){
+		number_description = "It's a negative five.";
+	} else {
+		console.log("something went wrong...")
+	};
+} else if ((number % 2) === 0) {
+	number_description = "It's an even number!";
+} else if ( number >= 0){
+	number_description = "It is a positive.";
+} else if ( number < 0){
+	number_description = "It is a negative.";
+} else {
+	number_description = "I don't think it's a number 🤨";
+}
+
+// make magic happen
+const magicOutcome = number * randomNumb;
+alert(`Taadaaa: 🔥 🔥 🔥  ${magicOutcome} 🔥 🔥 🔥`);
+

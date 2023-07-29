@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Josefin+Sans:wght@400;700&family=Roboto:wght@100&family=Unbounded:wght@500;900&display=swap');
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 16px; 
+  }
+  
+  .container {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  
+  label, input {
+  margin: 0.2rem;
+  width: auto;
+}
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  background: rgb(228, 250, 209);
+  background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid;
+  border-color: #4776E6;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 800;
+  color: #4776E6;
+    text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white;
+}
+
+
+#result {
+  padding-top: 1rem;
+  align-self: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: right;
+  color: white;
+  text-shadow: 0 0 5px lightblue, 0 0 5px lightblue, 0 0 5px blue, 0 0 5px blue;
+}
+
+label, input {
+  margin: 0.2rem;
+}
+
+#calculateButton {
+  margin-top: 0.5rem;
+  background-image: linear-gradient(to right, #4776E6 0%, #4776E6  100%);
+  radius: 0.2rem;
+  color: white;
+}
+
+         
+       
+  
+  #calculateButton, #clearButton {
+  margin-top: 0.5rem;
+  background-image: linear-gradient(to right, #4776E6 0%, #4776E6  100%);
+  radius: 0.2rem;
+  color: white;
+}

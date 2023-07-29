@@ -1,0 +1,34 @@
+let numbersObject = {
+  array: ["one", "one hundred and eight", "four", "thirty two", "seven", "ten", "minus 17", "forty two"],
+  loopArray: function(intro) {
+    console.log(intro);
+    for (let i = 0; i < this.array.length; i++) {
+      console.log("    " + (i+1) + ". Number: " + this.array[i]);
+    }
+  },
+  spliceArray: function(start, stop) {
+    splicedArray = this.array.splice(start, stop);
+    console.log("Spliced: " + splicedArray);
+  },
+  removeFirstElement: function() {
+    shifted = this.array.shift();
+    console.log("Shifted: " + shifted + ". The array now: " + this.array);
+  },
+  emptyArrayOneByOne: function() {
+      console.log("The array:  " + this.array + "\nLet's empty this array one by one:");
+      i = this.array.length;
+      while (this.array.length > 0) {
+        let popped = this.array.pop();
+        console.log("    " + (i) + ". Popped: " + popped);
+        i--;
+      };
+  },
+  executeAllMethods: function() {
+    this.loopArray("Below is a list of favourite numbers, not mine tho...");
+    this.spliceArray(0,2);
+    this.removeFirstElement();
+    this.emptyArrayOneByOne();
+  }
+};
+
+numbersObject.executeAllMethods();

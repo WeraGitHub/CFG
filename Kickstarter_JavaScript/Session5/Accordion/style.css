@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;700&display=swap");
+
+* {
+  font-family: "Geologica", sans-serif;
+}
+
+h1 {
+  color: #fc6c85;
+  text-align: center;
+  margin: 40px;
+}
+.accordion-container {
+  margin: 0px 20%;
+}
+.accordion-item {
+  border: 2px solid #fc6c85;
+  border-bottom: none;
+  position: relative;
+  background-color: pink;
+  color: white;
+}
+
+#redFruit {
+  border-radius: 10px 10px 0px 0px;
+}
+
+#yellowFruit {
+  border-radius: 0px 0px 10px 10px;
+  border-bottom: 2px solid #fc6c85;
+}
+
+h3 {
+  text-decoration: underline;
+  text-decoration-color: #fc6c85;
+  color: #fc6c85;
+}
+.accordion-header {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  padding-right: 40px;
+}
+
+.accordion-header::after {
+  content: "+";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8.5px;
+  background-color: white;
+  color: #fc6c85;
+  font-weight: bold;
+  border-radius: 100px;
+  border: 1px solid #fc6c85;
+  transition: 0.5s;
+}
+
+.accordion-header:hover::after {
+  background-color: #fc6c85;
+  color: white;
+  border-color: white;
+}
+
+.accordion-item.open .accordion-header::after {
+  content: "-";
+  padding: 8.5px 10px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 5px;
+}
+
+li {
+  font-size: 16px;
+}

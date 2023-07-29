@@ -1,0 +1,52 @@
+//Session3
+
+//Arrays
+/*
+function checkArray(array) {
+  console.log(array);
+  console.log(array.length);
+};
+
+let fruits = ["apple", "plum", "cherry", "banana"];
+
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+checkArray(fruits);
+fruits.push("avocado", "kiwi");
+checkArray(fruits);
+fruits.pop();
+checkArray(fruits);
+let poppedFruit = fruits.pop();
+console.log("Popped value " + poppedFruit);
+checkArray(fruits);
+*/
+
+//Objects
+const invisibleWomen = {
+  title: "Invisible Women",
+  subtitle: "Exposing th gender bias women face every day",
+  authors: {
+    author: "Caroline Criado-Perez",
+    subAuthor: "Weronika"
+  },
+  year: 2019,
+  favouriteFruits: ["apple", "plum", "cherry", "banana"]
+};
+
+console.log("Year: " + invisibleWomen.year);
+console.log("Title: " + invisibleWomen.title);
+console.log("Sub author: " + invisibleWomen.authors.subAuthor);
+console.log("Fav fruit: " + invisibleWomen.favouriteFruits[0]);
+
+
+
+function emptyArrayOneByOne(array) {
+  console.log("The array:  " + array + "\nLet's empty this array one by one:");
+    for (let i = 0; i < array.length; i++) {
+      let popped = array.pop();
+      console.log("    " + (i+1) + ". Popped: " + popped);
+  }
+};
+
+emptyArrayOneByOne(favNumbersArray);

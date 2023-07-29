@@ -1,0 +1,40 @@
+<h1>Assignment number 4</h1>
+
+<hr>
+
+<div id="instructions">
+  <p>Create a web app that takes input from the user and updates the
+  web page based on the input.<br />
+  You should:<br />
+  + Get input from the user on a web page<br />
+  + Make changes to the HTML and/or CSS using JavaScript<br />
+  + Use an event to trigger a change to a web page<br />
+  Bonus?<br />
+  + Add HTML elements to a web page using the DOM<br />
+  + Remove HTML elements from a web page using the DOM<br />
+  + Research and use other DOM events such as onmouseover<br />
+    + Use arrays, loops and/or conditional logic in JavaScript</p>
+  <button id="deleteIntroButton" onmouseover="deleteHtmlElement('instructions')">!! Mortal danger onmouseover!!<br />
+    !! Hovering over this button will delete this whole instructions section !!</button>
+  <p>
+    function used was remove(), and trigger was onmouseover
+  </p>
+  <hr>
+</div>
+
+<div id="numberSection">
+  <p>
+    Event: onchange, so when you use the arrow to amend the input field or if you type your number and press enter new DOM elements will be appended.
+  </p>
+  <label>Enter a number:</label>
+  <input id="numberInput" type="number" value=0 onchange="createAndAppendEmojiElement(this.value)">
+  <div id="numberOutput"></div>
+</div>
+
+<hr>
+
+<div id="squareSection">
+  <div id="square"></div>
+  <button id="backgroundChangeButton" onclick="backgroudColourChange('square')">Click me to randomly change background colour of this square</button>
+  <p>The random number is not perfect as it's missing colour range from 000000 to 099999, this could be improved by writing a function to add zeros to the front of a random number if the number is less than 100000.</p>
+</div>
